@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 문서의 문자 인코딩을 UTF-8로 설정 -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 모바일·태블릿 등 화면 크기에 맞게 비율 조정 -->
+
+    <title>06. if</title>
+    <!-- if 조건문 예제 -->
+
+    <script>
+        // 현재 날짜와 시간을 가진 Date 객체 생성
+        var data = new Date();
+
+        // 현재 시(hour)만 숫자로 가져옴 (0~23)
+        var hour = data.getHours();
+
+        // 시각에 따라 다른 메시지를 출력
+        if (hour < 11) {
+            // 오전 11시 이전
+            alert('아침');
+        } else if (hour < 14) {
+            // 오전 11시 이상, 오후 2시 미만
+            alert('점심');
+        } else {
+            // 오후 2시 이후
+            alert('저녁');
+        }
+    </script>
+</head>
+
+<body>
+    <!-- 화면에 출력되는 내용 없음 -->
+</body>
+
+</html>
