@@ -2,26 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- 문서 문자 인코딩 설정 -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 모바일 화면 대응 -->
+
     <title>02-1. typeof()</title>
+    <!-- typeof 연산자 학습 예제 -->
 </head>
+
 <script>
     var a = 1;
+    // 숫자 타입 변수
+
     var c = "3";
+    // 문자열 타입 변수
 
     document.write("a type: " + typeof a);
-    document.write("<br>");
+    // a의 자료형 출력 → number
+
+    document.write("<br>"); 
+    // 줄바꿈
 
     document.write("c type: " + typeof c);
+    // c의 자료형 출력 → string
+
     document.write("<br>");
 
     document.write("a + c result: " + (a + c));
+    // 숫자 + 문자열 → 문자열 결합
+    // 결과: "13"
+
     document.write("<br>");
 
     document.write("a + c type: " + typeof (a + c));
+    // 연산 결과의 자료형 확인 → string
 </script>
 
 <body>
-    
+    <!-- 화면 출력은 script 영역에서 처리 -->
 </body>
 </html>
