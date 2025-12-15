@@ -3,31 +3,64 @@
 
 <head>
     <meta charset="UTF-8">
+    <!-- 문서 문자 인코딩을 UTF-8로 설정 -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 모바일·반응형 화면 대응 -->
+
     <title>02.jQuery 연산자와 typeof()</title>
+
     <!--
-    + : 더하기
-    - : 빼기
-    * : 곱하기 ( x => 문자 x, X )
-    / : 나누기 (% => 나머지값)
--->
+        + : 덧셈
+            - 숫자 + 숫자 → 산술 연산
+            - 숫자 + 문자열 → 문자열 결합
+
+        - : 뺄셈
+            - 문자열이 숫자로 변환된 후 계산
+
+        * : 곱셈
+            - 문자열이 숫자로 변환된 후 계산
+
+        / : 나눗셈
+            - 문자열이 숫자로 변환된 후 계산
+            - % : 나머지 연산자
+    -->
+
     <script>
-        var a = 1;  // 주석문 사용
-        var b = 2;
-        var c = "3";    // 문자로 인식
+        var a = 1;       // 숫자 타입 변수
+        var b = 2;       // 숫자 타입 변수
+        var c = "3";     // 문자열 타입 변수
+
         document.write('안녕하세요 ');
-        document.write('<br>');
+        document.write('<br>');   // 줄바꿈
         document.write('javascript');
         document.write('<br>');
-        document.write(a + b); // 3;
+
+        document.write(a + b);
+        // 숫자 + 숫자 → 3 (산술 연산)
+
         document.write('<br>');
-        document.write(a + c); // 13;
+
+        document.write(a + c);
+        // 숫자 + 문자열 → "13"
+        // + 연산자는 문자열 결합이 우선됨
+
+        document.write('<br>');
+
+        document.write(a * c);
+        // 문자열 "3"이 숫자 3으로 변환됨
+        // 결과: 3
+
+        document.write('<br>');
+
+        document.write(a - c);
+        // 문자열 "3"이 숫자 3으로 변환됨
+        // 결과: -2
     </script>
 </head>
 
 <body>
-
-
+    <!-- 화면 출력은 script에서 처리 -->
 </body>
 
 </html>
