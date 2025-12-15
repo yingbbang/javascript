@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 문자 인코딩 설정 -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 반응형 대응 -->
+
+    <title>04.variable(Global Variable, Local Variable)</title>
+    <!-- 전역/지역변수 예제 -->
+
+
+    <script>
+        // 전역변수 선언
+        // var는 같은 이름으로 여러 번 선언 가능
+        var a = 10;
+        var a = 20; // 앞의 a(10)를 덮어씀 → 최종 전역변수 a = 20
+
+        // 함수 선언
+        function name() {
+
+            // 지역변수 선언 (전역변수 a와 이름만 같을 뿐, 다른 변수)
+            var a = 30;
+
+            // 지역변수 값 변경
+            a = 40;
+
+            // 지역변수 a 출력 → 40
+            alert(a);
+        }
+        // 전역변수 a 출력 → 20
+        alert(a);
+
+        // 함수 호출
+        // 함수 내부의 지역변수 a(40)가 출력됨
+        name();
+    </script>
+</head>
+
+<body>
+    <!-- 화면에 표시되는 내용 없음 -->
+</body>
+
+</html>
