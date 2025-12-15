@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04.전역변수(Global Variable)</title>
+    <script>
+        var globalVar = 10; // 전역변수
+
+        function test() {
+            console.log(globalVar); // 사용 가능
+        }
+
+        test();
+    </script>
+</head>
+
+<body>
+    <!--화면에 보이게 하려면,
+
+    1. alert 사용
+    alert(globalVar);
+    
+    2. document.write 사용
+    document.write(globalVar);
+
+    3. HTML 요소에 출력 (정석)
+    <body>
+        <p id="result"></p>
+
+        <script>
+            var globalVar = 10;
+
+            function test() {
+            document.getElementById("result").innerText = globalVar;
+            }
+            test();
+        </script>
+    </body>
+    -->
+</body>
+
+</html>
